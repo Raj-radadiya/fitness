@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none !important;  /* IE and Edge */
+    scrollbar-width: none !important;  /* Firefox */
+}
+
+@theme inline {
+  /* Configure your theme variables here */
+  --font-display: "Inter", "sans-serif";
+  --color-primary-500: oklch(0.84 0.18 117.33);
+  --spacing: 0.25rem;
+}
