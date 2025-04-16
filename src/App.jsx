@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './layout/Footer'
 import Header from './layout/header'
 import Rendering from './rendering'
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header/>
       <Rendering/>
+      <Footer/>
     </>
   )
 }
