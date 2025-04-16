@@ -142,15 +142,15 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <div className="bg-white">
+        <div className="bg-white relative z-[50]"> {/* Increased z-index */}
             {/* Mobile menu */}
             <Dialog
                 as="div"
-                className="relative z-[9999] lg:hidden"
+                className="relative z-[51] lg:hidden" /* Higher z-index than parent */
                 open={mobileMenuOpen}
                 onClose={() => setMobileMenuOpen(false)}
             >
-                <div className="fixed inset-0 z-[9999]">
+                <div className="fixed inset-0">
                     <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
 
                     <div className="fixed inset-y-0 right-0 flex max-w-full pl-10">
@@ -268,7 +268,7 @@ export default function Header() {
                 </div>
             </Dialog>
 
-            <header className="relative bg-white z-[1]">
+            <header className="relative bg-white z-[50]"> {/* Same z-index as parent */}
                 <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
                     Get free delivery on orders over $100
                 </p>
