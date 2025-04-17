@@ -11,14 +11,16 @@
   "dependencies": {
     "@headlessui/react": "^2.2.1",
     "@heroicons/react": "^2.2.0",
+    "aceternity-ui": "latest",
+    "aos": "^2.3.4",
+    "clsx": "^2.0.0",
     "flowbite": "^2.5.2",
     "flowbite-react": "^0.7.8",
     "framer-motion": "^12.7.3",
     "lucide-react": "^0.488.0",
     "react": "^19.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
-    "aceternity-ui": "latest",
-    "clsx": "^2.0.0",
     "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
@@ -31,4 +33,3 @@
     "vite": "^6.2.0"
   }
 }
-

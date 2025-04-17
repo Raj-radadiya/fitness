@@ -5,7 +5,7 @@ import About from './About'
 export default function Rendering() {
   return (
     <div>
-        <Home/>
+        {/* <Home/> */}
         <About/>
     </div>
   )
